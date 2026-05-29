@@ -1,69 +1,77 @@
 export function Welcome() {
+
+
+
   return (
-    <main className="bg-red-200 , h-500 ">
-      <div className="text-white , bg-red-600 , flex , p-7 ,">
-        <h1>Pokédex</h1>
-
-        <div>
-          <tr>
-            <table className="bg-red-600 , justify-between,   ">
-              <th>Home</th>
-              <th>Pokémons</th>
-              <th>Tipos</th>
-            </table>
-          </tr>
-        </div>
-      </div>
-
-      <div className=" flex , justify-between">
-        
-        <input
-          type="text"
-          placeholder="  "
-          className=" justify-items-center , flex , rounded-xl , bg-white , w-400 , h-15 , m-10 , items-center"
-        />
-           <button className="bg-red-500 , rounded-xl , h-8 , w-15 , m-15">
-                 <h1>Buscar</h1>
-            </button>
-      </div>
-        
-       
-
-      <div className=" grid-cols-4, flex ,flex-col , justify-around , cursr-pointer,">
-        <div className=" flex , text-black , rounded-xl , bg-yellow-200 , w-55 , justify-center-safe , hover:bg-amber-400 , transition delay-150 , duration-300 ,  hover:-translate-y-1 , hover:scale-110 ">
-          <button className=" py-20 , ">
-            <h1>Pikachu</h1>
-            <h1>Elétrico</h1>
-          </button>
-        </div>
-
-        <div className=" flex , text-black , rounded-xl , bg-green-300 , hover:bg-green-500 , w-55 , justify-center-safe ,  transition delay-150 , duration-300 ,  hover:-translate-y-1 , hover:scale-110 ">
-          <button className=" py-20 , ">
-            <h1>Pikachu</h1>
-            <h1>Elétrico</h1>
-          </button>
-        </div>
-
-        <div className=" flex , text-black , rounded-xl , bg-red-400 , hover:bg-red-600 , w-55 , justify-center-safe , transition delay-150 , duration-300 ,  hover:-translate-y-1 , hover:scale-110 ">
-          <button className=" py-20 , ">
-            <h1>Pikachu</h1>
-            <h1>Elétrico</h1>
-          </button>
-        </div>
-
-        <div className=" flex , text-black , rounded-xl , w-55 , hover:bg-blue-700 , justify-center-safe , bg-blue-400 , transition delay-150 , duration-300 , ease-in-out , hover:-translate-y-1 hover:scale-110  ">
-          <button className=" py-20 , ">
-            <h1>Pikachu</h1>
-            <h1>Elétrico</h1>
-          </button>
-        </div>
-      </div>
-
-      <div className="bg-blue-900 ,  text-white , justify-center ,  flex , h-10 , ">
-        <h1>Pokedéx - React + Tailwind</h1>
-      </div>
-
+    <main >
       
+        <div className="flex flex-auto justify-between bg-linear-to-r from-red-500 to-yellow-500 p-4 ">
+          <div className="p-1 flex gap-4 text-white text-2xl font-bold">
+            <h1>Pokemon </h1>
+          </div>
+
+          <div className="flex p-1 gap-4 text-white">
+            <h1>Home</h1>
+            <h1>Pokemons</h1>
+            <h1>Tipos</h1>
+          </div>
+        </div>
+     
+     
+
+      <div className="flex  flex-col justify-between bg-red-100 min-h-[calc(105.2vh-105.2px)]">
+
+        <div className="flex h-20 items-center bg-white mx-10 my-10 rounded-lg px-5 shadow-md ">
+            <form className="w-full relative">
+              <input 
+              type="text" 
+              className="w-330 p-3 pb-1 pl-10 border-b border-gray-200 focus:outline-none  "/>
+
+              <button className="bg-red-500 text-white px-4 py-1.5 rounded-md hover:bg-red-600 absolute right-2 cursor-pointer">Buscar</button>
+            </form>
+        </div>
+
+
+        <div className="flex justify-between p-3">
+
+          <div className="houver:scale-100 duration-300 mx-auto flex flex-col max-w-sm text-center items-center gap-x-4 rounded-xl bg-yellow-200 p-15 shadow-lg outline outline-black/5  dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" className="w-40 h-40 mx-auto mb-2" />
+              <h1 className="text-center text-xl font-medium  dark:text-white p-10">Pikachu</h1>
+              <button className="bg-yellow-400 rounded-lg p-0.5 text-white m-0.5">Eletrico</button>
+            
+          </div>
+
+          <div className="mx-auto py-2 flex flex-col max-sm: text-center items-center gap-2 rounded-xl bg-green-200 p-2 shadow-lg outline outline-black/5  dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+
+             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur" className="w-40 h-40 mx-auto mb-2" />
+              <h1 className="text-center text-xl font-medium text-black dark:text-white p-10">Bulbassauro</h1>
+              <button className="bg-green-400 rounded-lg px-2 py-0.5 text-xs text-white m-0.5">Planta</button>
+            
+          </div>
+
+          <div className="mx-auto flex flex-col max-w-sm text-center items-center gap-x-4 rounded-xl bg-red-200 p-15 shadow-lg outline outline-black/5  dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander" className="w-40 h-40 mx-auto mb-2" />
+              <h1 className="text-center text-xl font-medium text-black dark:text-white p-10">Charmander</h1>
+              <button className="bg-red-400 rounded-lg p-0.5 text-white m-0.5">Fogo</button>
+            
+          </div>
+
+          <div className="mx-auto text-center max-w-sm  flex-col items-center  gap-x-4 rounded-xl bg-blue-200 p-15 shadow-lg outline outline-black/5  dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+    
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle" className="w-40 h-40 mx-auto mb-2" />
+              <h1 className="text-center text-xl font-medium text-black dark:text-white p-10">Squirtle</h1>
+              <button className="bg-blue-400 rounded-lg p-0.5 text-white m-0.5 ">Agua</button>
+            
+          </div>
+    
+        </div>
+    
+        <div className="bg-blue-900 ">
+          <h1 className="text-center text-sm  text-white p-1.5">Pokédex - React + Tailwind</h1>
+        </div>
+      </div>
     </main>
   );
 }
