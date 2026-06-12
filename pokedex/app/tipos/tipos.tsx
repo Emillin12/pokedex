@@ -14,106 +14,114 @@ export function Tipos() {
             </div>
        </div>
 
-       <div className="mx-auto flex w-355 items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">    
+       <div className=" m-4 mx-auto flex w-355 flex-col gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">    
             <div>
-                <div className="text-xl text-black dark:text-white font-bold">Tipos de Pokémon</div>
-                    <p className="text-gray-600 ">Conheça os principais tipos e suas características</p>
+                <div className="flex justify-center text-xl text-black dark:text-white font-bold">Tipos de Pokémon</div>
+                    <p className="flex justify-center text-gray-600  ">Conheça os principais tipos e suas características</p>
             </div>
         </div>
 
-    <div className="flex grid-cols-4 gap-4 flex-wrap ">
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-yellow-300 p-6 ">
+    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 m-5 p-5   ">
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-yellow-300 p-15 m-10">
             <div> 
-                <p>Elétrico</p>
-                <p>Pokémons rápidos que usam ataques de eletricidade.</p>
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">⚡</h1>
+                <p className = "text-center m-2">Elétrico</p>
+                <p className = "text-center m-2"> Pokémons rápidos que usam ataques de eletricidade.</p>
                 <div>
-                    <button className="bg-yellow-400 text-white">Ex:Pikachu</button>
+                    <p className="text-center bg-yellow-400 rounded-xl p-0.2">Ex:Pikachu</p>
                 </div>
             </div>
         </div>
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-green-300 p-6 ">
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-green-300 p-15 m-10 ">
             <div> 
-                <p>Planta</p>
-                <p>Usam energia da natureza,folhas,vinhas e sementes.</p>
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">🌿</h1>
+                <p className = "text-center m-2">Planta</p>
+                <p className = "text-center m-5">Usam energia da natureza,folhas,vinhas e sementes.</p>
                 <div>
-                    <button className="bg-green-500">Ex:Bulbasaur</button>
+                    <p className="text-center bg-green-500 rounded-xl">Ex:Bulbasaur</p>
                 </div>
             </div>
         </div>
 
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-red-300 p-6 ">
-            <div>         
-                <p>Fogo</p>
-                <p>Possuem ataques quentes,intensos e explosivos.</p>
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-red-300 p-15 m-10 ">
+            <div>  
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">🔥</h1>   
+                <p className = "text-center m-2">Fogo</p>
+                <p className = "text-center m-5">Possuem ataques quentes,intensos e explosivos.</p>
                 <div>
-                    <button className="bg-red-500">Ex:Charmander</button>
+                    <p className="text-center bg-red-500 rounded-xl">Ex:Charmander</p>
                 </div>
             </div>
         </div>
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-blue-300 p-6 ">
-            <div> 
-                <p>Água</p>
-                <p>São versáteis e usam jatos de água em batalha.</p>
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-blue-300 p-15 m-10 ">
+            <div>
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">💧</h1> 
+                <p className = "text-center m-2">Água</p>
+                <p className = "text-center m-5">São versáteis e usam jatos de água em batalha.</p>
                 <div>
-                    <button className="bg-blue-500">Ex:Squirtie</button>
+                    <p className="text-center bg-blue-500 rounded-xl">Ex:Squirtie</p>
                 </div>
             </div>
         </div>
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-sky-300 p-6 ">
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-sky-300 p-15 m-10 ">
             <div> 
-                <p>Gelo</p>
-                <p>Usam frio ,neve e congelamentocontra seus oponentes.</p>
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">🧊</h1>
+                <p className = "text-center m-2">Gelo</p>
+                <p className = "text-center m-5">Usam frio ,neve e congelamentocontra seus oponentes.</p>
                 <div>
-                    <button className="bg-sky-500">Ex:Lapras</button>
+                    <p className="text-center bg-sky-500 rounded-xl">Ex:Lapras</p>
                 </div>
             </div>
         </div>
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-stone-500 p-6 ">
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-stone-500 p-15 m-10 ">
             <div> 
-                <p>Pedra</p>
-                <p>São resistentes e possuem grande força defensiva.</p>
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">🏔</h1>
+                <p className = "text-center m-2">Pedra</p>
+                <p className = "text-center m-5">São resistentes e possuem grande força defensiva.</p>
                 <div>
-                    <button className="bg-stone-700">Ex:Onix</button>
+                    <p className="text-center bg-stone-700 rounded-xl">Ex:Onix</p>
                 </div>
             </div>
         </div>
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-pink-300 p-6 ">
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-pink-300 p-15 m-10 ">
             <div> 
-                <p>Psíquico</p>
-                <p>Usam poderes mentais, telecinese e enrgia psíquica.</p>
+
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">🔮</h1>
+                <p className = "text-center m-2">Psíquico</p>
+                <p className = "text-center m-5">Usam poderes mentais, telecinese e enrgia psíquica.</p>
                 <div>
-                    <button className="bg-pink-400">Ex;Mewtwo</button>
+                    <p className="text-center bg-pink-400 rounded-xl">Ex;Mewtwo</p>
                 </div>
             </div>
         </div>
 
-        <div className="mx-auto flex w-100 items-center gap-x-4 rounded-xl bg-fuchsia-300 p-6 ">
+        <div className="mx-auto flex w-90 items-center gap-x-4 rounded-xl bg-fuchsia-300 p-15 m-10 ">
             <div> 
-                <p>Fantasma</p>
-                <p>Misteriosos , assustadores e difíceis de atingir.</p>
+                <h1 className = "text-center text-x1 font-medium text-black dark-text-waite">👻</h1>
+                <p className = "text-center m-2">Fantasma</p>
+                <p className = "text-center m-5">Misteriosos, assustadores e difíceis de atingir.</p>
                 <div>
-                    <button className="bg-fuchsia-400">Ex:Gengar</button>
+                    <p className="text-center bg-fuchsia-400 rounded-xl">Ex:Gengar</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
-
-
-        
-        
-        
-        
-        
+    <div className = "flex bg-blue-900 justify-center p-5">
+        <footer className= "flex justfy-center text-white">pokedéx - React + Tailwind</footer>
+    </div>
     
       
     </main>
